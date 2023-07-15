@@ -1,0 +1,121 @@
+.dragged-files-container {
+  .main-table {
+    .t-head {
+      //   display: none;
+      .t-row {
+        th {
+          border: 1px solid lightgray;
+          padding: 1rem;
+        }
+      }
+    }
+    .t-body {
+      .t-row {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        .t-data {
+          &:hover {
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          }
+        }
+        .csv-icon {
+          padding: 1rem 0;
+          padding-bottom: 0.4rem;
+        }
+        .data-table-container {
+          thead,
+          tbody {
+            tr {
+              th,
+              td {
+                // display: none
+                padding: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.uploaded-file-container {
+  position: relative;
+  // width: 205px;
+  .uploaded-file-tooltip-wrapper {
+    .uploaded-file-image {
+    }
+  }
+
+  .uploaded-file-delete-btn {
+    position: absolute;
+    bottom: 1rem;
+    // right: 4.8rem;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+}
+
+.drag-drop-area-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  .drag-drop-area {
+    padding: 1rem;
+    width: 40%;
+    .arrow-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span {
+        margin-top: 1rem;
+        font-family: "Roboto";
+      }
+    }
+  }
+
+  .upload-btn-wrapper {
+    .upload-btn {
+      background-color: rgba(211, 211, 211, 0.407);
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        order: 2;
+      }
+      span {
+        color: gray;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: larger;
+        font-family: "Roboto";
+      }
+    }
+  }
+}
+
+//
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th,
+td {
+  background-color: #96d4d46f;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+}

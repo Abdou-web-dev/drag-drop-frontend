@@ -1,0 +1,16 @@
+.app-container {
+  .dragged-files-and-rules-container {
+    .dragged-files-and-rules-inner {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      padding: 1rem;
+    }
+  }
+}
+
+.rules-container {
+  &.no-files-rules {
+    background-color: rgba(128, 128, 128, 0.33);
+    cursor: not-allowed;
+  }
+}
